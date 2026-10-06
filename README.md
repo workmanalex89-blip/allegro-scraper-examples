@@ -25,9 +25,11 @@ pip install apify-client      # for the Python examples
 npm install apify-client      # for the Node example
 ```
 
-The Actor costs **$1 per 1,000 records** on a paid Apify plan and
-**$0.01 per 1,000 on Apify's Free plan**, so you can run everything here,
-against real Allegro data, for about a cent.
+The Actor costs **$1 per 1,000 records** delivered — failed pages,
+duplicates and empty runs are not charged. Apify's Free plan comes with $5
+of monthly credit and the charges draw on it, so everything in this
+repository can be run against real Allegro data without paying anything of
+your own.
 
 ## What one record is
 
@@ -50,8 +52,8 @@ buy box: 28.88 zl (Kraina_Adwentu); cheapest: 28.88 zl
 
 One barcode delivered 116 records here, because that EAN sits on more than
 one Allegro product card and each card has its own sellers. Records are what
-is billed, so a run like this costs about a tenth of a cent on a paid plan -
-set `maxTotalChargeUsd` and the Actor stops at your cap.
+is billed, so a run like this costs about 12 cents - set `maxTotalChargeUsd`
+and the Actor stops at your cap.
 
 Two field meanings are worth knowing before you build on the data:
 
