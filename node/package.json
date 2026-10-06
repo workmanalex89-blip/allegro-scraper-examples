@@ -1,0 +1,8 @@
+{
+  "name": "allegro-scraper-examples-node",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "apify-client": "^2.14.0"
+  }
+}
